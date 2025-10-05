@@ -7,6 +7,7 @@ import 'app_routes.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
+    //f
     final args = settings.arguments;
 
     switch (settings.name) {
