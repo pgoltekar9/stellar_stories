@@ -4,7 +4,7 @@ import 'package:nasa_hackathon/features/home/home_screen.dart';
 import 'package:nasa_hackathon/features/splash/splash_screen.dart';
 import 'package:nasa_hackathon/features/story/story_screen.dart';
 import 'app_routes.dart';
-
+//route generator
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     //f
