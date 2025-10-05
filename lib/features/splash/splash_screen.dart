@@ -169,7 +169,7 @@ class _SplashScreenState extends State<SplashScreen>
                       const SizedBox(height: 50),
 
                       const Text(
-                        "CAPTAIN RAY",
+                        "CHROMOSPHERE",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 28,
@@ -198,7 +198,7 @@ class _SplashScreenState extends State<SplashScreen>
                       const SizedBox(height: 12),
 
                       const Text(
-                        "The Sunkeeper",
+                        "The Perfect Astro-Story Buddy",
                         style: TextStyle(
                           color: Colors.white60,
                           fontSize: 16,
@@ -211,7 +211,7 @@ class _SplashScreenState extends State<SplashScreen>
                       const SizedBox(height: 30),
 
                       const Text(
-                        "Space Weather Education",
+                        "NASA Space Apps Challenge",
                         style: TextStyle(
                           color: Colors.white10,
                           fontSize: 12,

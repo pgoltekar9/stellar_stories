@@ -218,7 +218,7 @@ class _HomeScreenState extends State<HomeScreen>
                   const SizedBox(height: 60),
 
                   const Text(
-                    "CAPTAIN RAY",
+                    "CHROMOSPHERE",
                     style: TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.w300,
@@ -246,7 +246,7 @@ class _HomeScreenState extends State<HomeScreen>
                   const SizedBox(height: 16),
 
                   const Text(
-                    "The Sunkeeper",
+                    "The Perfect Astro Buddy",
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w300,
@@ -258,7 +258,7 @@ class _HomeScreenState extends State<HomeScreen>
                   const SizedBox(height: 30),
 
                   const Text(
-                    "Space Weather Education",
+                    "NASA Space Apps Challenge",
                     style: TextStyle(
                       fontSize: 11,
                       fontWeight: FontWeight.w300,
@@ -280,7 +280,7 @@ class _HomeScreenState extends State<HomeScreen>
         icon: Icons.auto_stories,
         title: "STORY",
         description:
-            "Journey with Captain Ray through\nthe mysteries of space weather",
+            "Stories you can Enjoy and Learn with",
         gradientColors: const [Color(0xFF1A2F4A), Color(0xFF2C5282)],
         chevron: Icons.chevron_right,
       );
