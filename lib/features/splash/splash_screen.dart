@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../routes/app_routes.dart';
 import 'dart:math' as math;
-
+//splash screen
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
