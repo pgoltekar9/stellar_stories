@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:project_helios/features/story/Northern_Lights2.dart';
 import 'dart:math' as math;
 
+import 'package:project_helios/features/story/Northern_Lights4.dart';
 
-class AuroraPage1 extends StatefulWidget {
-  const AuroraPage1({super.key});
+class AuroraPage3 extends StatefulWidget {
+  const AuroraPage3({super.key});
 
   @override
-  State<AuroraPage1> createState() => _AuroraPage1State();
+  State<AuroraPage3> createState() => _AuroraPage3State();
 }
 
-class _AuroraPage1State extends State<AuroraPage1>
+class _AuroraPage3State extends State<AuroraPage3>
     with TickerProviderStateMixin {
   late AnimationController _starController;
   late AnimationController _ribbonController;
@@ -131,9 +131,9 @@ class _AuroraPage1State extends State<AuroraPage1>
                     ),
                     SizedBox(height: 10),
                     Text(
-                      "One crisp winter night, Aurora the explorer gazed up at the dark sky. Suddenly, "
-                      "streaks of green, pink, and violet shimmered above! The Northern Lights danced across "
-                      "the sky like magical ribbons.\n\n",
+                      "With wide eyes and a racing heart, Aurora imagined soaring through the sparkling ribbons, "
+                      "chasing the dancing lights across the frozen landscape. Each wave of color told a story, "
+                      "and every twinkle promised a new adventure!",
                       style: TextStyle(
                         fontSize: 16,
                         color: Colors.black87,
@@ -188,7 +188,7 @@ class _AuroraPage1State extends State<AuroraPage1>
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AuroraPage2()),
+                  MaterialPageRoute(builder: (context) => AuroraPage4()),
                 );
               },
               backgroundColor: Colors.green.shade600,

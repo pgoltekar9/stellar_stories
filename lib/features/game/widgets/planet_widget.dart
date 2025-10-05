@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../models/planet_data.dart';
+import 'package:project_helios/models/planet_data.dart';
 
 class PlanetWidget extends StatelessWidget {
   final Planet planet;

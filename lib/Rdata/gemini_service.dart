@@ -3,44 +3,40 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import '../models/planet_data.dart';
 
-class ChatGPTService {
-  final String apiKey = dotenv.env['OPENAI_API_KEY'] ?? '';
-  final String baseUrl = 'https://api.openai.com/v1/chat/completions';
+class GeminiService {
+  final String apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
+  final String baseUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 
   /// Generates short environmental summaries using the improved NASA-based prompt
   Future<String> generateSunEffectPrompt(Planet planet, int sunLevel) async {
     final prompt = _generatePrompt(planet, sunLevel);
 
     final body = jsonEncode({
-      "model": "gpt-4o-mini",
-      "messages": [
+      "contents": [
         {
-          "role": "system",
-          "content": "You are a scientific AI assistant specializing in solar physics and planetary environments."
-        },
-        {
-          "role": "user",
-          "content": prompt
+          "parts": [
+            {
+              "text": prompt
+            }
+          ],
+          "role": "user"
         }
-      ],
-      "temperature": 0.7,
-      "max_tokens": 150
+      ]
     });
 
     final response = await http.post(
-      Uri.parse(baseUrl),
+      Uri.parse('$baseUrl?key=$apiKey'),
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer $apiKey',
       },
       body: body,
     );
 
     if (response.statusCode == 200) {
       final decoded = jsonDecode(response.body);
-      return decoded['choices'][0]['message']['content'].toString().trim();
+      return decoded['candidates'][0]['content'].toString().trim();
     } else {
-      throw Exception("ChatGPT API Error: ${response.body}");
+      throw Exception("Gemini API Error: ${response.body}");
     }
   }
 

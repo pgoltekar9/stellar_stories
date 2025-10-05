@@ -1,9 +1,9 @@
 import 'dart:async';
-import '../../../models/planet_data.dart';
-import '../../../Rdata/gemini_service.dart';
+import 'package:project_helios/Rdata/gemini_service.dart';
+import 'package:project_helios/models/planet_data.dart';
 
 class PreloadService {
-  final ChatGPTService _geminiService = ChatGPTService();
+  final GeminiService _geminiService = GeminiService();
 
   /// Stores preloaded AI summaries for each planet
   final Map<String, String> _planetSummaries = {};
