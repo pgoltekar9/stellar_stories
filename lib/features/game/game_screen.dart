@@ -18,7 +18,7 @@ class _GameScreenState extends State<GameScreen>
   bool isStormActive = false;
   
   final List<Planet> planets = [
-    Planet(name: "Mercury", distance: 80, speed: 1.5, color: Colors.grey, size: 15),
+    Planet(name: "Mercuroius", distance: 80, speed: 1.5, color: Colors.grey, size: 15),
     Planet(name: "Venus", distance: 110, speed: 1.2, color: Colors.orange.shade300, size: 20),
     Planet(name: "Earth", distance: 150, speed: 1.0, color: Colors.blue, size: 22),
     Planet(name: "Mars", distance: 190, speed: 0.8, color: Colors.red.shade400, size: 18),
