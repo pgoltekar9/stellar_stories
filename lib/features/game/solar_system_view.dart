@@ -3,14 +3,14 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../models/planet_data.dart';
-import '../widgets/planet_widget.dart';
-import '../widgets/planet_details_panel.dart';
-import '../widgets/solar_flare_widget.dart';
-import '../widgets/starfield_widget.dart';
-import '../widgets/comet_widget.dart';
-import '../components/navbar.dart';
-import '../preload.dart';
+import '../../models/planet_data.dart';
+import 'widgets/planet_widget.dart';
+import 'widgets/planet_details_panel.dart';
+import 'widgets/solar_flare_widget.dart';
+import 'widgets/starfield_widget.dart';
+import 'widgets/comet_widget.dart';
+import '../../components/navbar.dart';
+import 'preload.dart';
 
 class SolarSystemProvider extends ChangeNotifier {
   Planet? selectedPlanet;

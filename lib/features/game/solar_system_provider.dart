@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/planet_data.dart';
+import '../../models/planet_data.dart';
 
 class SolarSystemProvider extends ChangeNotifier {
   Planet? selectedPlanet;

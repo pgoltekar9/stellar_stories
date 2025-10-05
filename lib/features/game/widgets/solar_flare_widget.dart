@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import '../models/planet_data.dart';
+import '../../../models/planet_data.dart';
 
 class SolarFlareWidget extends StatefulWidget {
   final double zoom;

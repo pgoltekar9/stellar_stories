@@ -1,6 +1,6 @@
 import 'dart:async';
-import '../models/planet_data.dart';
-import '../Rdata/gemini_service.dart';
+import '../../../models/planet_data.dart';
+import '../../../Rdata/gemini_service.dart';
 
 class PreloadService {
   final ChatGPTService _geminiService = ChatGPTService();

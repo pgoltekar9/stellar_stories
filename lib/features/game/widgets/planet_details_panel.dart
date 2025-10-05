@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import '../models/planet_data.dart';
+import '../../../models/planet_data.dart';
 
 class PlanetDetailsPanel extends StatelessWidget {
   final Planet planet;
